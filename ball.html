@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ball</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .ball-container {
+      position: relative;
+      height: 600px;
+    }
+
+    .ball {
+      width: 125px;
+      height: 128px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition-property: left;
+      transition-duration: 3s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+    }
+
+    .ball img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ball-container:hover .ball {
+      left: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ball-container">
+    <div class="ball">
+      <img src="images/ball.png" alt="ball">
+    </div>
+  </div>
+
+</body>
+</html>

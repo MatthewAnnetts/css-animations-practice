@@ -1,0 +1,89 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ball</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .ball-container {
+      position: relative;
+      height: 600px;
+    }
+
+/*    @keyframes ball {
+      from {
+        left: 0;
+      }
+
+      to {
+        left: 500px;
+      }
+    }*/
+
+    @keyframes ball {
+      0%, 100% {
+        left: 0;
+        top: 0;
+      }
+
+      25% {
+        top: 0;
+        left: 500px;
+      }
+
+      50% {
+        top: 500px;
+        left: 500px;
+      }
+
+      75% {
+        top: 500px;
+        left: 0;
+      }
+    }
+
+    .ball {
+      width: 125px;
+      height: 128px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      /*animation-name: ball;*/
+      /*animation-duration: 6s;*/
+      /*animation-iteration-count: 2;*/
+      animation-delay: 0.5s;
+      /*animation-direction: alternate-reverse;*/
+      /*animation-fill-mode: forwards;*/
+      /*animation-timing-function: ease-in-out;*/
+      /*animation-play-state: running;*/
+      animation: ball 4s linear infinite;
+    }
+
+    .ball img {
+      width: 100%;
+      height: 100%;
+    }
+
+   /* .ball-container:hover .ball {
+      animation-play-state: paused;
+    }*/
+
+  </style>
+</head>
+<body>
+  <div class="ball-container">
+    <div class="ball">
+      <img src="images/ball.png" alt="ball">
+    </div>
+  </div>
+
+</body>
+</html>
